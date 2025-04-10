@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import AnimatedCursor from 'react-animated-cursor'
 
-export default function CustomCursor() {
+export default function Cursor() {
   const [isDesktop, setIsDesktop] = useState(false)
 
   useEffect(() => {

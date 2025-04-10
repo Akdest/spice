@@ -11,7 +11,7 @@ import Team from '@/components/Team'
 import UpcomingEvents from '@/components/UpcomingEvents'
 import About from '@/components/About'
 import Sponsors from '@/components/Sponsors'
-import CustomCursor from '@/components/Customcursor'
+import Cursor from '@/components/Cursor'
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <>
       {/* 👾 Custom Animated Cursor */}
-      <CustomCursor/>
+      <Cursor/>
 
       <main className="scroll-smooth hero-bg overflow-hidden">
         <Hero />

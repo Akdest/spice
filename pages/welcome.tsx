@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Loader from '@/components/Loader'
 import Preloader from '@/components/Preloader'
-import CustomCursor from '@/components/Customcursor'
+import Cursor from '@/components/Cursor'
 
 const floatingWords = [
   'Sense', 'Program', 'Innovate', 'Control', 'Empower',
@@ -48,7 +48,7 @@ export default function Welcome() {
 
   return (
     <>
-      <CustomCursor/>
+      <Cursor/>
 
       <section
         onClick={handleEnter}
