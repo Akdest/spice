@@ -114,7 +114,7 @@ export default function Welcome() {
                   transition={{ delay: 0.6, duration: 1 }}
                   className="italic text-blue-700 mt-4 text-md md:text-xl"
                 >
-                  "Not Just Built Different, Wired That Way!!"
+                  &quot;Not Just Built Different, Wired That Way!!&quot;
                 </motion.p>
               </motion.div>
 
