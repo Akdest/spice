@@ -71,16 +71,16 @@ export default function Hero() {
       {/* Spotlights */}
      
       {showNavbar && (
-        <motion.nav
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, ease: 'easeOut' }}
-          className='fixed top-0 pr-12 w-full h-16 bg-white shadow-md z-40 flex items-center justify-end gap-10 text-gray-800 text-base font-semibold'
-        >
-          <a href="#" className="hover:text-blue-600 transition">Home</a>
-          <a href="#about" className="hover:text-blue-600 transition">About</a>
-          <a href="#upcoming-events" className="hover:text-blue-600 transition">Events</a>
-        </motion.nav>
+       <motion.nav
+       initial={{ opacity: 0, y: -20 }}
+       animate={{ opacity: 1, y: 0 }}
+       transition={{ duration: 0.5, ease: 'easeOut' }}
+       className="fixed top-0 pr-12 w-full h-16 bg-white shadow-md z-40 flex items-center justify-end gap-6 md:gap-8 lg:gap-12 text-gray-800 text-base font-semibold"
+     >
+       <a href="#" className="hover:text-blue-600 transition">Home</a>
+       <a href="#about" className="hover:text-blue-600 transition">About</a>
+       <a href="#upcoming-events" className="hover:text-blue-600 transition">Events</a>
+     </motion.nav>
       )}
 
       <motion.img
