@@ -43,7 +43,7 @@ export default function Welcome() {
   // Show initial loader while Welcome page is mounting
   if (isLoadingWelcome) return <Loader />
 
-  // Show Preloader after click before redirect
+  // Show Preloader after click before redirect for INDEX.tsx
   if (showPreloader) return <Preloader />
 
   return (

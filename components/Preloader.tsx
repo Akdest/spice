@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 export default function Preloader() {
   return (
-    <div className="w-screen h-screen bg-blue-950 text-blue-500 flex flex-col items-center justify-center font-mono overflow-hidden">
+    <div className="w-screen h-screen bg-blue-50 text-blue-500 flex flex-col items-center justify-center font-mono overflow-hidden">
       {/* Title */}
       <motion.h1
         className="text-xl md:text-3xl tracking-widest text-blue-500"

@@ -14,7 +14,7 @@ const bootLines = [
 
 export default function Loader() {
   return (
-    <div className="w-screen h-screen flex flex-col items-center justify-center bg-blue-950 text-blue-100 font-mono text-sm tracking-wide overflow-hidden">
+    <div className="w-screen h-screen flex flex-col items-center justify-center bg-blue-50 text-blue-100 font-mono text-sm tracking-wide overflow-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
