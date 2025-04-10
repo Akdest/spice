@@ -53,17 +53,17 @@ export const PastEvents = ({
            
         </motion.p>
     <motion.div
-      className="relative scrollbar-hide overflow-y-auto flex h-[30rem] justify-center space-x-6  rounded-md p-10"
+      className="relative scrollbar-hide overflow-y-auto flex h-[30rem] justify-center space-x-6    rounded-md p-10"
       ref={ref}
     >
-      <div className="flex w-[100%] lg:w-[60%] items-start px-4">
+      <div className="flex w-[100%] lg:w-[60%]  items-start px-4">
         <div className="w-full">
           {content.map((item, index) => (
-            <div key={item.title + index} className="my-20">
+            <div key={item.title + index} className="my-10 lg:my-20">
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: activeCard === index ? 1 : 0.3 }}
-                className="md:text-3xl text-md font-bold text-gray-800"
+                className="md:text-3xl text-2xl font-bold text-gray-800"
               >
                 {item.title}
               </motion.h2>
@@ -82,7 +82,7 @@ export const PastEvents = ({
 
       <div
         className={cn(
-          "sticky top-10 hidden h-[100%] w-[35%] overflow-hidden rounded-md lg:block",
+          "sticky top-10 h-[100%] w-[35%] overflow-hidden rounded-md hidden lg:block",
           contentClassName,
         )}
       >
