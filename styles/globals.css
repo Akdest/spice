@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-bg {
+  background: linear-gradient(-45deg, #e0f2fe, #ffffff, #dbeafe, #f0f9ff);
+  background-size: 300% 300%;
+  animation: gradientShift 18s ease-in-out infinite;
+  transition: background 1s ease-in-out;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+    scroll-behavior: smooth;
+    
+  
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+
+  margin:0;
+  padding:0;
+}
+
+
+/* Custom Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0f2fe;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* Tailwind's blue-500 */
+  border-radius: 10px;
+  border: 2px solid #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb; /* Tailwind's blue-600 */
+}
