@@ -12,6 +12,7 @@ const nextConfig = {
         permanent: false, // set to true if this should always happen
       },
     ]
+    
   },
 }
 

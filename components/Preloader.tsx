@@ -11,7 +11,7 @@ export default function Preloader() {
         animate={{ opacity: [0.3, 1, 0.6, 1] }}
         transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
       >
-        Booting Control Systems...
+        Booting Systems...
       </motion.h1>
 
       {/* Pulsing Node Grid */}

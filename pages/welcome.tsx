@@ -7,6 +7,7 @@ import Image from 'next/image'
 import Loader from '@/components/Loader'
 import Preloader from '@/components/Preloader'
 import Cursor from '@/components/Cursor'
+import AnimatedGlowBackground from '@/components/AnimatedGlowBackground'
 
 const floatingWords = [
   'Sense', 'Program', 'Innovate', 'Control', 'Empower',
@@ -131,12 +132,12 @@ export default function Welcome() {
           })}
         </AnimatePresence>
 
-        {/* Animated Glow */}
-        <motion.div
-          className="absolute w-[50rem] h-[50rem] bg-blue-600 rounded-full blur-[150px] opacity-30"
-          animate={{ scale: [0.9, 1.1, 0.9] }}
-          transition={{ repeat: Infinity, duration: 4, ease: 'easeInOut' }}
-        />
+       
+  <AnimatedGlowBackground />
+  {/* Your existing hero content */}
+
+
+
       </section>
     </>
   )

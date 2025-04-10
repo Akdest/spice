@@ -22,7 +22,8 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require("tw-elements/dist/plugin"),
     require('@tailwindcss/line-clamp'),
-    require('flowbite/plugin')
+    require('flowbite/plugin'),
+    require('tailwind-scrollbar-hide')
   ],
 }
 // tailwind.config.js

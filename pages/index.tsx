@@ -13,6 +13,7 @@ import UpcomingEvents from '@/components/UpcomingEvents'
 import About from '@/components/About'
 import Sponsors from '@/components/Sponsors'
 import Cursor from '@/components/Cursor'
+import  { StickyScrollRevealDemo } from '@/components/PastEvents'
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -46,6 +47,9 @@ export default function Home() {
         </motion.div>
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={sectionVariants}>
           <UpcomingEvents />
+        </motion.div>
+        <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={sectionVariants}>
+          <StickyScrollRevealDemo/>
         </motion.div>
         <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.2 }} variants={sectionVariants}>
           <Sponsors />
