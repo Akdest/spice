@@ -77,8 +77,8 @@ export default function Welcome() {
                 <Image
                   src="/logo/spice-logo-dark.svg"
                   alt="SPICE Logo"
-                  width={350}
-                  height={350}
+                  width={300}
+                  height={300}
                   className="drop-shadow-lg"
                 />
                 <motion.p
