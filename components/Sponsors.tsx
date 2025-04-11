@@ -38,7 +38,7 @@ export default function Sponsors() {
           className="absolute bottom-0 top-4 left-0 w-full flex justify-center"
         >
           <Image
-            src="/images/robo_02.png"
+            src="/images/robo_03.png"
             alt="Robo"
             fill
             className="object-contain object-center h-full w-auto"
