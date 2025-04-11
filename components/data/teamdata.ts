@@ -9,7 +9,7 @@ export const leads = [
     },
     {
       name: 'Sameer Chaurasia',
-      role: 'Head',
+      role: 'Co-Head',
       year: 'Batch of 2025',
       imageUrl: '/team/sameer.jpg',
     },
