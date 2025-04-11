@@ -36,8 +36,8 @@ export default function ContactUs() {
           transition={{ duration: 0.7 }}
           className="mb-16 text-center"
         >
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl font-orbitron">
-            Official Contact
+          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl font-orbitron">
+          Comm Link
           </h2>
           <p className="mt-4 text-lg text-gray-600 max-w-xl mx-auto">
             Have questions, suggestions, or collaboration ideas? Reach out to us anytime.

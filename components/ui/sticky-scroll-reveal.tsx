@@ -53,7 +53,7 @@ export const PastEvents = ({
   return (
     <section className="w-full hero-bg py-12 lg:py-24 items-center justify-center">
       <h1 className="text-3xl font-orbitron md:text-4xl lg:text-6xl text-center font-extrabold leading-tight mb-4 text-gray-900">
-        Past Events
+        Archived Missions
       </h1>
       <motion.p className="mt-2 text-lg text-center mb-4 text-gray-800">
         A glimpse into our past events and activities.
@@ -103,7 +103,7 @@ export const PastEvents = ({
       )}
 
       {/* Button Label */}
-      <span className="font-bold tracking-wide">
+      <span className="font-bold text-blue-600 tracking-wide">
         {showAll ? "Conceal Mission Logbook" : "Reveal Mission Logbook"}
       </span>
 

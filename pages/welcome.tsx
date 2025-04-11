@@ -49,6 +49,10 @@ export default function Welcome() {
 
   return (
     <>
+    
+      
+
+        
       <Cursor/>
 
       <section
@@ -133,12 +137,13 @@ export default function Welcome() {
         </AnimatePresence>
 
        
-  <AnimatedGlowBackground />
+
   {/* Your existing hero content */}
 
-
+  <AnimatedGlowBackground />
 
       </section>
+  
     </>
   )
 }

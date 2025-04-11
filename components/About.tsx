@@ -49,7 +49,7 @@ export default function About() {
     transition={{ delay: 0.2, duration: 0.8 }}
     className="text-5xl sm:text-6xl md:text-7xl font-extrabold font-orbitron mb-6 text-blue-100"
   >
-    About SPICE
+   Foundational Blueprint
   </motion.h2>
 
   <motion.p

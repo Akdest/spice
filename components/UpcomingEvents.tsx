@@ -45,7 +45,7 @@ export default function UpcomingEvents() {
           className="flex-1 text-gray-800"
         >
           <h3 className="text-4xl font-extrabold text-blue-700 mb-6">
-            Our Faculty Advisor
+          Prime Directive Overseer
           </h3>
           <p className="text-xl leading-relaxed mb-4">
             &quot;We have come a long way in the last few years, but there&apos;s still a long
@@ -74,7 +74,7 @@ export default function UpcomingEvents() {
 >
   {/* Top badge */}
   <p className="inline-block px-5 py-2 bg-blue-600 text-white rounded-full text-base font-semibold tracking-wide animate-pulse">
-    Techniti Special Events
+    UTKANSH Special Events
   </p>
 
   {/* Gap between badge and header */}
@@ -82,7 +82,7 @@ export default function UpcomingEvents() {
     {/* Header with scroll-reveal underline */}
     <h1 className="text-4xl font-orbitron sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-2 text-gray-900 relative inline-block">
       <span className="relative inline-block">
-        Upcoming Event
+      Launchpad Event
         
       </span>
     </h1>

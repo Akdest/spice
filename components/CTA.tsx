@@ -46,7 +46,7 @@ export default function CTA() {
         transition={{ duration: 0.7 }}
         className="relative z-10 text-4xl font-orbitron sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight mb-10"
       >
-        Gallery
+       Event Snapshots
       </motion.h1>
 
       <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">

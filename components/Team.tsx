@@ -129,7 +129,7 @@ export default function Team() {
     <div className="py-12 sm:py-1">
       <div>
         <TeamSection
-          title="Presenting Our Leads"
+          title="Alpha Core Controllers"
           people={leads}
           cols="sm:grid-cols-1 md:grid-cols-2"
         />
@@ -137,7 +137,7 @@ export default function Team() {
         {/* Accordion version for small screens only */}
         <div className="block lg:hidden">
           <AccordionSection
-            title="SPICE Family"
+            title="Operative Modules"
             people={currentFamily}
             cols="grid-cols-1"
           />
@@ -146,14 +146,14 @@ export default function Team() {
         {/* Normal grid version for md and above */}
         <div className="hidden lg:block">
           <TeamSection
-            title="SPICE Family"
+            title="Operative Modules"
             people={currentFamily}
             cols="md:grid-cols-2 lg:grid-cols-4"
           />
         </div>
 
         <AccordionSection
-          title="Meet Our Alumni Family"
+          title="Legacy Units"
           people={alumniFamily}
           cols="sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
         />

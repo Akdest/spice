@@ -119,7 +119,7 @@ export default function Hero() {
         <span className='ml-1 animate-pulse text-blue-600'>|</span>
       </motion.div>
 
-      <div className='relative flex-grow w-full flex flex-col md:flex-row items-end justify-between max-w-7xl gap-6 px-2 sm:px-6 pb-4'>
+      <div className='relative flex-grow w-full flex flex-col md:flex-row items-end justify-between max-w-7xl gap-6 px-2 sm:px-6 pb-4 md:pb-0'>
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           animate={{ opacity: 1, x: 0 }}
@@ -139,7 +139,7 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 1.0, duration: 0.8 }}
-          className='relative w-full lg:w-1/2 h-[30vh] md:h-[85vh] lg:h-[100%] flex items-end justify-center'
+          className='relative w-full lg:w-1/2 h-[30vh] md:h-[80vh] lg:h-[100%] flex items-end justify-center'
         >
           <motion.div
             animate={{ scale: [1, 1.05, 1], y: [0, -10, 0] }}

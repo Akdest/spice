@@ -1,46 +1,40 @@
-import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+'use client'
 
-const GlowOrb = ({ delay = 0 }) => {
-  const [position, setPosition] = useState({ top: "50%", left: "50%" });
+import { motion } from 'framer-motion'
+import { useState, useEffect } from 'react'
+
+export default function InfiniteSonarRipple() {
+  const [ripples, setRipples] = useState<number[]>([])
 
   useEffect(() => {
-    const updatePosition = () => {
-      setPosition({
-        top: `${Math.random() * 100}%`,
-        left: `${Math.random() * 100}%`,
-      });
-    };
-
-    const interval = setInterval(updatePosition, 5000); // Update every 5s
-    return () => clearInterval(interval);
-  }, []);
+    let count = 0
+    const interval = setInterval(() => {
+      setRipples((prev) => [...prev, count])
+      count++
+    }, 1400) // Delay between ripples
+    return () => clearInterval(interval)
+  }, [])
 
   return (
-    <motion.div
-      className="absolute w-80 h-80 bg-blue-400 rounded-full opacity-60 pointer-events-none"
-      style={{
-        filter: "blur(100px)",
-      }}
-      animate={{
-        top: position.top,
-        left: position.left,
-      }}
-      transition={{
-        duration: 5,
-        ease: "easeInOut",
-        delay,
-      }}
-    />
-  );
-};
+    <div className="fixed inset-0 flex items-center justify-center z-10 overflow-hidden">
+      {ripples.map((id) => (
+        <motion.div
+          key={id}
+          className="absolute rounded-full border border-blue-400"
+          initial={{ scale: 0.4, opacity: 0.4 }}
+          animate={{ scale: 2 + id * 2, opacity: 0 }}
+          transition={{
+            duration: 6,
+            ease: 'easeInOut',
+          }}
+          style={{
+            width: 80,
+            height: 80,
+          }}
+        />
+      ))}
 
-export default function AnimatedGlowBackground() {
-  return (
-    <>
-      <GlowOrb />
-      <GlowOrb delay={1} />
-      <GlowOrb delay={2.5} />
-    </>
-  );
+    
+    </div>
+  )
 }
