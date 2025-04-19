@@ -5,7 +5,7 @@ export const leads = [
       name: 'Rashim',
       role: 'Head',
       year: 'Batch of 2025',
-      imageUrl: 'https://avatars.githubusercontent.com/u/114280987?v=4',
+      imageUrl: '/team/rashim.jpg',
     },
     {
       name: 'Sameer Chaurasia',
